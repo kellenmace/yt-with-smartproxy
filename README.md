@@ -21,14 +21,14 @@ You can see that `axios` is being used to make the request.
 
 Visit http://localhost:5173/api/youtube-js?id=NhHi0OjHUMQ and confirm that YouTube.js is working. The response should include info about [this hilarious YouTube video](https://www.youtube.com/watch?v=NhHi0OjHUMQ), like this:
 
-```json
+```json5
 {
-	"basic_info": {
-		"id": "NhHi0OjHUMQ",
-		"channel_id": "UCT5qXmLacW_a4DE-3EgeOiQ",
-		"title": "Tech CEOs Rank Web Browsers (AI Tier List)",
-		"duration": 367,
-		"keywords": ["arc", "arc browser", "the browser company", "browser"]
+	basic_info: {
+		id: 'NhHi0OjHUMQ',
+		channel_id: 'UCT5qXmLacW_a4DE-3EgeOiQ',
+		title: 'Tech CEOs Rank Web Browsers (AI Tier List)',
+		duration: 367,
+		keywords: ['arc', 'arc browser', 'the browser company', 'browser']
 		// ...
 	}
 	// ...
@@ -87,5 +87,6 @@ https://github.dev/LuanRT/YouTube.js/blob/4fca6c354e5493c4d78802a813f7aa51ef0e27
 ^ You can see that it has `export type FetchFunction = typeof fetch;` at the top, and `fetch: FetchFunction;` within the interface.
 
 I found the following two GitHub issues on the YouTube.js repo that contain code snippets for proxy implementation. I'm not sure how well-written they are. They could be useful to refer to, though.
-https://github.com/LuanRT/YouTube.js/issues/622
-https://github.com/LuanRT/YouTube.js/issues/725
+
+- https://github.com/LuanRT/YouTube.js/issues/622
+- https://github.com/LuanRT/YouTube.js/issues/725
